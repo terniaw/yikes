@@ -20,8 +20,6 @@
 						});
 					});
 
-					// Hack for iOS Safari's benefit. It goes searching for onclick handlers and is liable to click
-					// something else nearby.
 					element.onclick = function (event) { };
 				};
 			}]);
@@ -43,8 +41,5 @@
 
 	angular.module('ionic')
     .directive('select', SelectDirective);
-
-	/*angular.module('ionic-datepicker')
-	.directive('select', SelectDirective);*/
 
 })(angular, ionic);

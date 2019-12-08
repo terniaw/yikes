@@ -33,5 +33,8 @@
   ],
   "cordovaPlatforms": [
     "android"
-  ]
+  ],
+  "dependencies": {
+    "image-uploader": "^1.3.0"
+  }
 }

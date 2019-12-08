@@ -16,6 +16,7 @@
             {
                 color: "#3DBEC9",
                 title: "Add Clothes"
+                
             },
             {
                 color: "#5AD863",
