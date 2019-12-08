@@ -16,3 +16,10 @@
 })();
 
 //<script src="lib/image-uploader.bundle.min.js"></script>
+/*
+const imageUpload = new ImageUpload();
+imageUpload.push(file, (data) => {
+  console.log('File uploaded Successfully', $scope.file, data);
+  $scope.uploadUri = data.url;
+});
+*/

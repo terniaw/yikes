@@ -70,7 +70,8 @@ angular.module('App', ['ionic', 'ngCordova', 'ngAnimate'])
                     controller: 'ItemController'
                 }
             }
-        }) /*;*/
+        }); /*;*/
+        /*
         .state('app.item', {
             url: "/item/Add%20Clothes",
             (function(AWS){
@@ -183,11 +184,12 @@ angular.module('App', ['ionic', 'ngCordova', 'ngAnimate'])
                     });
                   },
                 };
-              })(window.AWS);')
+              })(window.AWS);');
+              */
         
     $urlRouterProvider.otherwise(function ($injector, $location) {
         var $state = $injector.get("$state");
         $state.go("home");
     });
-}]);
-;
+}]); 
+
