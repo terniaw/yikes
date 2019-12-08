@@ -1,3 +1,23 @@
+/*
+(function() {
+'use strict';
+
+    angular
+        .module('App')
+        .controller('GalleryController', GalleryController);
+
+    GalleryController.$inject = ['$scope', '$state'];
+    function GalleryController($scope, $state) {
+        
+        $scope.openItem = function(item){
+            $state.go('app.item', { title: item.title, icon: item.icon, color: item.color });
+        };
+    }
+})();
+*/
+
+
+
 angular.module('App', ['ionic', 'ngCordova', 'ngAnimate'])
 
 .run(['$ionicPlatform', 
@@ -337,9 +357,9 @@ window.queries = [
     function AppController($scope, $ionicPopover) {
         
         $scope.items = [
-			{
+			{	
                 color: "#000000",
-                title: "FITTED"
+                title: "FITTED\u2122"
             },
             {
                 color: "#3DBEC9",

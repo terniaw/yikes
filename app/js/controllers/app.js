@@ -11,7 +11,7 @@
         $scope.items = [
             {
                 color: "#000000",
-                title: "FITTED"
+                title: "FITTED\u2122"
             },
             {
                 color: "#3DBEC9",
