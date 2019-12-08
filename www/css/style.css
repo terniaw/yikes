@@ -113,7 +113,10 @@
 
 .itemView .animated {
   -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s; }
+          animation-delay: 0.2s; 
+        font-family: arial;
+        font-weight: bolder;
+        color: white;}
 
 /*slide out side menu thingy*/
 .menu ion-header-bar {
