@@ -1,8 +1,3 @@
-// Ionic Starter App
-
-// angular.module is a global place for creating, registering and retrieving Angular modules
-// 'App' is the name of this angular module example (also set in a <body> attribute in index.html)
-// the 2nd parameter is an array of 'requires'
 angular.module('App', ['ionic', 'ngCordova', 'ngAnimate'])
 
 .run(['$ionicPlatform', 
@@ -10,13 +5,8 @@ angular.module('App', ['ionic', 'ngCordova', 'ngAnimate'])
       function($ionicPlatform, $sqliteService) {
   $ionicPlatform.ready(function() {
     if(window.cordova && window.cordova.plugins.Keyboard) {
-      // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
-      // for form inputs)
-      cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
 
-      // Don't remove this line unless you know what you are doing. It stops the viewport
-      // from snapping when text inputs are focused. Ionic handles this internally for
-      // a much nicer keyboard experience.
+      cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
       cordova.plugins.Keyboard.disableScroll(true);
     }
     if(window.StatusBar) {
@@ -81,7 +71,6 @@ angular.module('App', ['ionic', 'ngCordova', 'ngAnimate'])
     });
 }]);
 
-/* global ionic */
 (function (angular, ionic) {
 	"use strict";
 
@@ -102,9 +91,6 @@ angular.module('App', ['ionic', 'ngCordova', 'ngAnimate'])
 							scope.clicktimer = $timeout(function () { delete scope.clicktimer; }, 1, false);
 						});
 					});
-
-					// Hack for iOS Safari's benefit. It goes searching for onclick handlers and is liable to click
-					// something else nearby.
 					element.onclick = function (event) { };
 				};
 			}]);
@@ -137,16 +123,9 @@ window.queries = [
 	//Create tables
 	"CREATE TABLE Users (IdUser integer primary key autoincrement, Name text not null);",
 	//Insert Users
-	"INSERT INTO 'Users' ('Name') VALUES ('Juan David Nicholls Cardona');",
-	"INSERT INTO 'Users' ('Name') VALUES ('Khriztian Moreno Zuluaga');",
-	"INSERT INTO 'Users' ('Name') VALUES ('Cristian Rivas Buitrago');",
-	"INSERT INTO 'Users' ('Name') VALUES ('Juan David Sánchez');",
-	"INSERT INTO 'Users' ('Name') VALUES ('Nicolas Molina');",
-	"INSERT INTO 'Users' ('Name') VALUES ('Miyamoto Musashi FIlander');",
-	"INSERT INTO 'Users' ('Name') VALUES ('Didier Hernandez');",
-	"INSERT INTO 'Users' ('Name') VALUES ('Luis Eduardo Oquendo Pérez');",
-	"INSERT INTO 'Users' ('Name') VALUES ('Carlos Rojas');",
-	"INSERT INTO 'Users' ('Name') VALUES ('Levano Castilla Carlos Miguel');"
+	"INSERT INTO 'Users' ('Name') VALUES ('Monty Skooly Datta');",
+	"INSERT INTO 'Users' ('Name') VALUES ('Playboi Jimmy Carti');",
+	"INSERT INTO 'Users' ('Name') VALUES ('Nakala Ady Mahal');"
 ];
 (function () {
 	'use strict';
@@ -358,35 +337,25 @@ window.queries = [
     function AppController($scope, $ionicPopover) {
         
         $scope.items = [
-            {
-                color: "#E47500",
-                icon: "ion-ionic",
-                title: "Hello Ionic"
-            },
-            {
-                color: "#5AD863",
-                icon: "ion-social-html5",
-                title: "HTML5"
-            },
-            {
-                color: "#F8E548",
-                icon: "ion-social-javascript",
-                title: "JS"
-            },
-            {
-                color: "#AD5CE9",
-                icon: "ion-social-sass",
-                title: "Sass"
+			{
+                color: "#000000",
+                title: "FITTED"
             },
             {
                 color: "#3DBEC9",
-                icon: "ion-social-css3",
-                title: "CSS3"
+				title: "Add Clothes"
+            },
+            {
+                color: "#5AD863",
+                title: "Get Outfit"
+            },
+            {
+                color: "#F8E548",
+                title: "My Closet"
             },
             {
                 color: "#D86B67",
-                icon: "ion-social-angular",
-                title: "Angular"
+                title: "Settings"
             }
         ];
 
@@ -438,8 +407,8 @@ window.queries = [
 
 		$scope.HelloWorld = function () {
 			$ionicPopup.alert({
-				title: 'Hello World',
-				template: 'This is the best template to start with Ionic Framework!',
+				title: 'Hi',
+				template: 'This is FITTED!',
      		cssClass: 'animated bounceInDown'
 			});
 		};
@@ -456,9 +425,6 @@ window.queries = [
 			$scope.users = [];
 		};
 		
-		//Center content
-		//1. http://codepen.io/mhartington/pen/gcHeL
-		//2. http://codepen.io/anon/pen/meQJvp
 	}
 })();
 (function() {
@@ -617,10 +583,8 @@ window.queries = [
 
 		self.preloadDataBase = function (enableLog) {
 			var deferred = $q.defer();
-
-			//window.open("data:text/plain;charset=utf-8," + JSON.stringify({ data: window.queries.join('').replace(/\\n/g, '\n') }));
 			if (window.sqlitePlugin === undefined) {
-				enableLog && console.log('%c ***************** Starting the creation of the database in the browser ***************** ', 'background: #222; color: #bada55');
+				enableLog && console.log('%c ***************** Starting the creation of the database in the browser ***************** ', 'background: #900; color: #000000');
 				self.db().transaction(function (tx) {
 					for (var i = 0; i < window.queries.length; i++) {
 						var query = window.queries[i].replace(/\\n/g, '\n');
@@ -631,7 +595,7 @@ window.queries = [
 				}, function (error) {
 					deferred.reject(error);
 				}, function () {
-					enableLog && console.log('%c ***************** Completing the creation of the database in the browser ***************** ', 'background: #222; color: #bada55');
+					enableLog && console.log('%c ***************** Completing the creation of the database in the browser ***************** ', 'background: #900; color: #000000');
 					deferred.resolve("OK");
 				});
 			}

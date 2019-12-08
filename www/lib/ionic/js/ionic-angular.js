@@ -1,19 +1,6 @@
-/*!
- * Copyright 2015 Drifty Co.
- * http://drifty.com/
- *
- * Ionic, v1.3.0-nightly-3127
- * A powerful HTML5 mobile app framework.
- * http://ionicframework.com/
- *
- * By @maxlynch, @benjsperry, @adamdbradley <3
- *
- * Licensed under the MIT license. Please see LICENSE for more information.
- *
- */
 
 (function() {
-/* eslint no-unused-vars:0 */
+
 var IonicModule = angular.module('ionic', ['ngAnimate', 'ngSanitize', 'ui.router', 'ngIOS9UIWebViewPatch']),
   extend = angular.extend,
   forEach = angular.forEach,

@@ -1,0 +1,12 @@
+{
+  "name": "ionic-starter-template",
+  "integrations": {},
+  "type": "ionic1",
+  "watchPatterns": [
+    "scss/**/*",
+    "www/**/*",
+    "!www/lib/**/*",
+    "!www/**/*.map"
+  ],
+  "id": "4e7ca04a"
+}

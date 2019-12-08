@@ -10,34 +10,24 @@
         
         $scope.items = [
             {
-                color: "#E47500",
-                icon: "ion-ionic",
-                title: "Hello Ionic"
-            },
-            {
-                color: "#5AD863",
-                icon: "ion-social-html5",
-                title: "HTML5"
-            },
-            {
-                color: "#F8E548",
-                icon: "ion-social-javascript",
-                title: "JS"
-            },
-            {
-                color: "#AD5CE9",
-                icon: "ion-social-sass",
-                title: "Sass"
+                color: "#000000",
+                title: "FITTED"
             },
             {
                 color: "#3DBEC9",
-                icon: "ion-social-css3",
-                title: "CSS3"
+                title: "Add Clothes"
+            },
+            {
+                color: "#5AD863",
+                title: "Get Outfit"
+            },
+            {
+                color: "#F8E548",
+                title: "My Closet"
             },
             {
                 color: "#D86B67",
-                icon: "ion-social-angular",
-                title: "Angular"
+                title: "Settings"
             }
         ];
 

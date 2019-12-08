@@ -1,24 +1,3 @@
-/*!
- * ionic.bundle.js is a concatenation of:
- * ionic.js, angular.js, angular-animate.js,
- * angular-sanitize.js, angular-ui-router.js,
- * and ionic-angular.js
- */
-
-/*!
- * Copyright 2015 Drifty Co.
- * http://drifty.com/
- *
- * Ionic, v1.3.0-nightly-3127
- * A powerful HTML5 mobile app framework.
- * http://ionicframework.com/
- *
- * By @maxlynch, @benjsperry, @adamdbradley <3
- *
- * Licensed under the MIT license. Please see LICENSE for more information.
- *
- */
-
 (function() {
 
 // Create global ionic obj and its namespaces
@@ -147,11 +126,6 @@ window.ionic.version = '1.3.0-nightly-3127';
     document.addEventListener('DOMContentLoaded', domReady);
   }
 
-
-  // From the man himself, Mr. Paul Irish.
-  // The requestAnimationFrame polyfill
-  // Put it on window just to preserve its context
-  // without having to use .call
   window._rAF = (function() {
     return window.requestAnimationFrame ||
            window.webkitRequestAnimationFrame ||
